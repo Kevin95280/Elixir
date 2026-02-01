@@ -50,9 +50,9 @@ Déploiement sur Render pour une mise en ligne simple et fiable
 
 Après avoir installé les dépendances :
 
-bash
-npm install
-npm run dev
+```npm start``` sur le dossier FRONTEND
+```npm run dev``` sur le dossier BACKEND
+
 L’application sera accessible en local via l’URL indiquée dans la console.
 
 &nbsp;
