@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { signup } from "../../../../../backend/src/app/services/authService";
+import { signup } from "../../../services/authService";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
