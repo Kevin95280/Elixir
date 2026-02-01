@@ -5,7 +5,8 @@ Application personnelle permettant de conserver, organiser et retrouver facileme
 
 &nbsp;
 
-Objectif du projet
+## Objectif du projet
+
 L’idée derrière Elixir est née d’un constat simple :
 au fil des années, j’ai dégusté de nombreuses bouteilles mémorables… mais la plupart de leurs photos et informations se sont perdues lors de changements de téléphone ou de nettoyages de stockage.
 
@@ -25,7 +26,8 @@ Ce projet représente également un terrain d’expérimentation pour améliorer
 
 &nbsp;
 
-Fonctionnement
+## Fonctionnement
+
 L’application repose sur une architecture moderne et évolutive :
 
 Frontend en React avec gestion d’état locale et composants réutilisables
@@ -44,7 +46,8 @@ Déploiement sur Render pour une mise en ligne simple et fiable
 
 &nbsp;
 
-Lancer le projet en local
+## Lancer le projet en local
+
 Après avoir installé les dépendances :
 
 bash
@@ -55,7 +58,7 @@ L’application sera accessible en local via l’URL indiquée dans la console.
 &nbsp;
 
 🔗 Démo en ligne
-👉 Lien à venir après déploiement Render
+👉 [Voir le site en ligne](https://elixir.onrender.com)
 
 &nbsp;
 
