@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://elixir-backend-gp9f.onrender.com";
 
 export async function signup(userData) {
   const res = await fetch(`${API_URL}/api/users`, {
