@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+const API_URL = "https://elixir-backend-gp9f.onrender.com/api";
+
 const ResetPassword = () => {
   const { token } = useParams();
   const navigate = useNavigate();
@@ -39,7 +41,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const res = await fetch(`http://localhost:3000/api/reset-password/${token}`, {
+      const res = await fetch(`${API_URL}/api/reset-password/${token}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),

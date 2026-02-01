@@ -8,6 +8,8 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
+const FRONTEND_URL = process.env.FRONTEND_URL;
+
 const authController = {
 
   // LOGIN
@@ -67,7 +69,7 @@ const authController = {
       user.resetTokenExpire = Date.now() + 1000 * 60 * 10; // 10 minutes
       await user.save();
 
-      const resetLink = `http://localhost:1234/reset-password/${resetToken}`;
+      const resetLink = `${FRONTEND_URL}/reset-password/${resetToken}`;
       console.log("Lien de reset :", resetLink);
 
       await sendResetEmail(email, resetLink);

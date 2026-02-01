@@ -5,6 +5,8 @@ import { useLanguage } from "../../context/LanguageContext";
 import { useTranslation } from "react-i18next";
 import Avatar from "boring-avatars";
 
+const API_URL = "https://elixir-backend-gp9f.onrender.com/api";
+
 const AccountPage = () => {
   const { user, token, logout, loading } = useAuth();
   const navigate = useNavigate();
@@ -60,7 +62,7 @@ const AccountPage = () => {
     setSaving(true);
 
     try {
-      const res = await fetch(`http://localhost:3000/api/users/${user.id}`, {
+      const res = await fetch(`${API_URL}/api/users/${user.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -88,7 +90,7 @@ const AccountPage = () => {
     if (!window.confirm(t("account.dangerZone.confirmDelete"))) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/api/users/${user.id}`, {
+      const res = await fetch(`${API_URL}/api/users/${user.id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

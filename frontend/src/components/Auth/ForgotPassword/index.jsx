@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+const API_URL = "https://elixir-backend-gp9f.onrender.com/api";
+
 const ForgotPassword = () => {
   const { t } = useTranslation();
 
@@ -14,7 +16,7 @@ const ForgotPassword = () => {
     setMessage(null);
 
     try {
-      const res = await fetch("http://localhost:3000/api/forgot-password", {
+      const res = await fetch(`${API_URL}/api/forgot-password`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

@@ -1,5 +1,7 @@
+const API_URL = "https://elixir-backend-gp9f.onrender.com/api";
+
 export async function getBottles(token) {
-  const response = await fetch("http://localhost:3000/api/bottles", {
+  const response = await fetch(`${API_URL}/bottles`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -10,7 +12,7 @@ export async function getBottles(token) {
 }
 
 export async function createBottle(bottle, token) {
-  const response = await fetch("http://localhost:3000/api/bottles", {
+  const response = await fetch(`${API_URL}/bottles`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -23,9 +25,8 @@ export async function createBottle(bottle, token) {
   return response.json();
 }
 
-
 export async function updateBottle(id, payload, token) {
-  const res = await fetch(`http://localhost:3000/api/bottles/${id}`, {
+  const res = await fetch(`${API_URL}/bottles/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -43,7 +44,7 @@ export async function updateBottle(id, payload, token) {
 }
 
 export async function deleteBottle(id, token) {
-  const res = await fetch(`http://localhost:3000/api/bottles/${id}`, {
+  const res = await fetch(`${API_URL}/bottles/${id}`, {
     method: "DELETE",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -51,5 +52,4 @@ export async function deleteBottle(id, token) {
   });
 
   if (!res.ok) throw new Error("Erreur suppression bouteille");
-};
-
+}
