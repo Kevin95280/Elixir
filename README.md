@@ -1,8 +1,5 @@
-Elixir
-https://img.shields.io/badge/React-frontend-blue  
-https://img.shields.io/badge/Node.js-backend-green  
-https://img.shields.io/badge/TailwindCSS-style-38bdf8  
-https://img.shields.io/badge/Render-deploy-46e3b7
+# Elixir ![React](https://img.shields.io/badge/React-frontend-blue) ![Node](https://img.shields.io/badge/Node.js-backend-green) ![Tailwind](https://img.shields.io/badge/TailwindCSS-style-38bdf8) ![Render](https://img.shields.io/badge/Render-deploy-46e3b7)
+
 
 Application personnelle permettant de conserver, organiser et retrouver facilement les vins qui m’ont marqué.
 
