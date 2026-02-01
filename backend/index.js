@@ -12,7 +12,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:1234",
-    "https://cave_a_vin-frontend.onrender.com"
+    "https://elixir-3iwt.onrender.com"
   ],
   methods: ["GET", "POST", "PATCH", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
