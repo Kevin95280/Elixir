@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.12",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

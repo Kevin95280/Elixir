@@ -1,0 +1,137 @@
+{
+  "account": {
+    "unknownDate": "Date unknown",
+    "password": {
+      "tooShort": "Too short",
+      "needUpper": "Missing a capital letter",
+      "needLower": "Missing a lowercase letter",
+      "needNumber": "One digit missing",
+      "needSymbol": "Missing a symbol",
+      "strong": "Fort",
+      "empty": "Password cannot be empty",
+      "notStrongEnough": "Password not strong enough",
+      "updateError": "Unable to change password",
+      "updated": "Password changed!",
+      "title": "Change my password",
+      "new": "New password",
+      "updating": "Modification...",
+      "update": "Update password"
+    },
+    "dangerZone": {
+      "confirmDelete": "Are you sure you want to delete your account?",
+      "deleteError": "Unable to delete account",
+      "title": "Hazardous area",
+      "warning": "This action is irreversible.",
+      "delete": "Delete my account"
+    },
+    "createdAt": "Created on",
+    "theme": "Theme",
+    "themeDark": "Dark",
+    "themeLight": "Clair",
+    "language": "Language",
+    "languageFr": "French",
+    "languageEn": "English"
+  },
+  "loading": "Loading...",
+  "unauthorized": "Not authorized",
+  "addForm": {
+    "errorRequired": "Please fill in all required fields.",
+    "errorSave": "Recording error.",
+    "name": "Name",
+    "year": "Year",
+    "type": "Type",
+    "owner": "Owner",
+    "link": "Link",
+    "img": "Image (URL)",
+    "alt": "Alternative text",
+    "modifying": "Modification...",
+    "modify": "Edit",
+    "saving": "Recording...",
+    "save": "Register",
+    "cancel": "Cancel",
+    "selectType": "Select a type"
+  },
+  "forgot": {
+    "success": "A reset email has been sent if this account exists.",
+    "title": "Password forgotten",
+    "email": "Your email",
+    "submit": "Send link"
+  },
+  "login": {
+    "error": "Incorrect identifiers",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Login",
+    "forgot": "Forgot your password?"
+  },
+  "reset": {
+    "password": {
+      "tooShort": "Too short",
+      "needUpper": "Missing a capital letter",
+      "needLower": "Missing a lowercase letter",
+      "needNumber": "One digit missing",
+      "needSymbol": "Missing a symbol",
+      "strong": "Fort",
+      "noMatch": "Passwords don't match",
+      "label": "New password",
+      "confirm": "Confirm password"
+    },
+    "title": "New password",
+    "success": "Password updated!",
+    "submit": "Reset"
+  },
+  "signup": {
+    "password": {
+      "tooShort": "Too short",
+      "needUpper": "Missing a capital letter",
+      "needLower": "Missing a lowercase letter",
+      "needNumber": "One digit missing",
+      "needSymbol": "Missing a symbol",
+      "strong": "Fort",
+      "noMatch": "Passwords don't match",
+      "label": "Password",
+      "strength": "Force :",
+      "confirm": "Confirm password"
+    },
+    "success": "Account created! Redirection in 5 seconds...",
+    "username": "Name",
+    "email": "Email",
+    "submit": "Create an account"
+  },
+  "backButton": {
+    "label": "Back"
+  },
+  "header": {
+    "deleteConfirm": "Are you sure you want to delete your account?",
+    "deleteError": "Account deletion error",
+    "deleteFail": "Unable to delete account",
+    "brand": "WineBook",
+    "login": "Login",
+    "signup": "Create an account",
+    "welcome": "Welcome to your cellar, {{name}}",
+    "logout": "Log off",
+    "account": "My account",
+    "tagline": "Find every wine that has made an impression on you, in an instant."
+  },
+  "home": {
+    "loadError": "Cylinder loading error",
+    "deleteConfirm": "Delete that bottle?",
+    "deleteError": "Unable to remove the bottle",
+    "addBottle": "Add a bottle"
+  },
+  "search": {
+    "label": "Enter a keyword:",
+    "placeholder": "Search for a bottle...",
+    "button": "Search"
+  },
+  "wineTypes": {
+    "Rouge": "Red",
+    "Blanc": "White",
+    "Rosé": "Rosé",
+    "Pétillant": "Sparkling",
+    "Autre": "Other"
+  },
+  "footer": {
+    "rights": "© {{year}} Elixir - All rights reserved"
+  }
+}

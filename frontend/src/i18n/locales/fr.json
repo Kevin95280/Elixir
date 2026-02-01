@@ -1,0 +1,137 @@
+{
+  "account": {
+    "unknownDate": "Date inconnue",
+    "password": {
+      "tooShort": "Trop court",
+      "needUpper": "Manque une majuscule",
+      "needLower": "Manque une minuscule",
+      "needNumber": "Manque un chiffre",
+      "needSymbol": "Manque un symbole",
+      "strong": "Fort",
+      "empty": "Le mot de passe ne peut pas être vide",
+      "notStrongEnough": "Le mot de passe n'est pas assez fort",
+      "updateError": "Impossible de modifier le mot de passe",
+      "updated": "Mot de passe modifié !",
+      "title": "Modifier mon mot de passe",
+      "new": "Nouveau mot de passe",
+      "updating": "Modification...",
+      "update": "Mettre à jour le mot de passe"
+    },
+    "dangerZone": {
+      "confirmDelete": "Es-tu sûr de vouloir supprimer ton compte ?",
+      "deleteError": "Impossible de supprimer le compte",
+      "title": "Zone dangereuse",
+      "warning": "Cette action est irréversible.",
+      "delete": "Supprimer mon compte"
+    },
+    "createdAt": "Créé le",
+    "theme": "Thème",
+    "themeDark": "Sombre",
+    "themeLight": "Clair",
+    "language": "Langue",
+    "languageFr": "Français",
+    "languageEn": "Anglais"
+  },
+  "loading": "Chargement...",
+  "unauthorized": "Non autorisé",
+  "addForm": {
+    "errorRequired": "Veuillez remplir tous les champs obligatoires.",
+    "errorSave": "Erreur lors de l'enregistrement.",
+    "name": "Nom",
+    "year": "Année",
+    "type": "Type",
+    "owner": "Propriétaire",
+    "link": "Lien",
+    "img": "Image (URL)",
+    "alt": "Texte alternatif",
+    "modifying": "Modification...",
+    "modify": "Modifier",
+    "saving": "Enregistrement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "selectType": "Sélectionnez un type"
+  },
+  "forgot": {
+    "success": "Un email de réinitialisation a été envoyé si ce compte existe.",
+    "title": "Mot de passe oublié",
+    "email": "Votre email",
+    "submit": "Envoyer le lien"
+  },
+  "login": {
+    "error": "Identifiants incorrects",
+    "email": "Email",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "forgot": "Mot de passe oublié ?"
+  },
+  "reset": {
+    "password": {
+      "tooShort": "Trop court",
+      "needUpper": "Manque une majuscule",
+      "needLower": "Manque une minuscule",
+      "needNumber": "Manque un chiffre",
+      "needSymbol": "Manque un symbole",
+      "strong": "Fort",
+      "noMatch": "Les mots de passe ne correspondent pas",
+      "label": "Nouveau mot de passe",
+      "confirm": "Confirmer le mot de passe"
+    },
+    "title": "Nouveau mot de passe",
+    "success": "Mot de passe mis à jour !",
+    "submit": "Réinitialiser"
+  },
+  "signup": {
+    "password": {
+      "tooShort": "Trop court",
+      "needUpper": "Manque une majuscule",
+      "needLower": "Manque une minuscule",
+      "needNumber": "Manque un chiffre",
+      "needSymbol": "Manque un symbole",
+      "strong": "Fort",
+      "noMatch": "Les mots de passe ne correspondent pas",
+      "label": "Mot de passe",
+      "strength": "Force :",
+      "confirm": "Confirmer le mot de passe"
+    },
+    "success": "Compte créé ! Redirection dans 5 secondes…",
+    "username": "Nom",
+    "email": "Email",
+    "submit": "Créer un compte"
+  },
+  "backButton": {
+    "label": "Retour"
+  },
+  "header": {
+    "deleteConfirm": "Es-tu sûr de vouloir supprimer ton compte ?",
+    "deleteError": "Erreur lors de la suppression du compte",
+    "deleteFail": "Impossible de supprimer le compte",
+    "brand": "Elixir",
+    "tagline": "Retrouvez chaque vin qui vous a marqué, en un instant.",
+    "login": "Se connecter",
+    "signup": "Créer un compte",
+    "welcome": "Bienvenue dans ta cave, {{name}}",
+    "logout": "Déconnexion",
+    "account": "Mon compte"
+  },
+  "footer": {
+    "rights": "© {{year}} Elixir — Tous droits réservés"
+  },
+  "home": {
+    "loadError": "Erreur lors du chargement des bouteilles",
+    "deleteConfirm": "Supprimer cette bouteille ?",
+    "deleteError": "Impossible de supprimer la bouteille",
+    "addBottle": "Ajouter une bouteille"
+  },
+  "search": {
+    "label": "Entrez un mot-clé :",
+    "placeholder": "Rechercher une bouteille...",
+    "button": "Rechercher"
+  },
+  "wineTypes": {
+  "Rouge": "Rouge",
+  "Blanc": "Blanc",
+  "Rosé": "Rosé",
+  "Pétillant": "Pétillant",
+  "Autre": "Autre"
+  }
+}
