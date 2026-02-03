@@ -315,3 +315,20 @@ footer {
   h2 { font-size: 1.5rem; }
   .container { padding: 1rem; }
 }
+
+@media (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  nav a:last-child {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+

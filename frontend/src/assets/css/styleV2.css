@@ -31604,6 +31604,22 @@ footer {
   }
 }
 
+@media (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  nav a:last-child {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -182833,3 +182849,4 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+

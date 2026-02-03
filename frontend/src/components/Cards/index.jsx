@@ -29,7 +29,7 @@ const Cards = ({ cards, highlightId, onEdit, onDelete }) => {
               {t(`wineTypes.${type}`)}
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-8 gap-6 justify-items-center">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-6 justify-items-center">
               {group.map((card, index) => (
                 <WineCardWrapper
                   key={card.id || `${type}-${index}`}
