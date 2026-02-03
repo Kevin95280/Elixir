@@ -31273,6 +31273,10 @@ a {
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -31287,9 +31291,10 @@ body {
 /* === Container === */
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 /* === Headings === */
@@ -31605,8 +31610,15 @@ footer {
 }
 
 @media (max-width: 640px) {
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
   nav {
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.4rem;
   }
 
@@ -31617,6 +31629,15 @@ footer {
   nav a:last-child {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
   }
 }
 

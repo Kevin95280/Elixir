@@ -10,7 +10,7 @@ const SearchForm = ({ setSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full">
+    <form onSubmit={handleSubmit} className="search-bar flex flex-col sm:flex-row gap-2 w-full">
       <label htmlFor="search" className="sr-only">
         {t("search.label")}
       </label>
