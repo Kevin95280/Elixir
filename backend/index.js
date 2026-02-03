@@ -25,16 +25,17 @@ app.use(express.json());
 app.use("/api", router);
 
 // Port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 
-// Connexion + lancement serveur
+// Connexion + lancement du serveur
 sequelize.sync()
   .then(() => {
     console.log("Base synchronisée avec Sequelize");
     app.listen(port, () => {
-      console.log(`Serveur lancé sur http://localhost:${port}`);
+      console.log(`Serveur lancé sur port ${port}`);
     });
   })
   .catch((err) => {
     console.error("Erreur de synchronisation Sequelize :", err);
   });
+
