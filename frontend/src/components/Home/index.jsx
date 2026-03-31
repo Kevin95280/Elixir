@@ -137,11 +137,7 @@ const Home = () => {
 
       {/* Vidéo visible uniquement si l'utilisateur n'est PAS connecté */}
       {!user && (
-        <div className="relative w-full max-w-5xl mx-auto">
-          <span className="absolute top-3 left-3 bg-black/60 text-white text-sm px-3 py-1 rounded-md backdrop-blur">
-            {t("demoVideo.badge")}
-          </span>
-
+        <div className="w-full max-w-5xl mx-auto px-4">
           <video
             src={introVideo}
             autoPlay
@@ -150,6 +146,7 @@ const Home = () => {
             playsInline
             controls
             className="w-full rounded-lg shadow-xl"
+            aria-label={t("demoVideo.alt")}
           />
 
           <p className="text-center text-sm text-gray-500 mt-2">
@@ -172,7 +169,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-

@@ -105,7 +105,7 @@
     "deleteConfirm": "Are you sure you want to delete your account?",
     "deleteError": "Account deletion error",
     "deleteFail": "Unable to delete account",
-    "brand": "WineBook",
+    "brand": "Elixir",
     "login": "Login",
     "signup": "Create an account",
     "welcome": "Welcome to your cellar, {{name}}",
