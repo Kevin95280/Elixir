@@ -8,6 +8,8 @@ import AddForm from "../AddForm";
 import Cards from "../Cards";
 import Footer from "../Footer";
 
+import introVideo from "../../assets/videos/Video Presentation Elixir.mp4";
+
 import { getBottles, deleteBottle } from "../../../../backend/src/app/services/bottleService";
 
 const Home = () => {
@@ -25,7 +27,6 @@ const Home = () => {
 
   const typeOrder = ["Rouge", "Blanc", "Rosé", "Pétillant", "Autre"];
 
-  // Charger toutes les bouteilles (avec token)
   const fetchAllWines = async () => {
     try {
       const data = await getBottles(token);
@@ -46,14 +47,12 @@ const Home = () => {
     }
   };
 
-  // Charger les bouteilles uniquement quand le token est prêt
   useEffect(() => {
     if (!token) return;
     fetchAllWines();
     setInitialLoad(false);
   }, [token]);
 
-  // Recherche
   useEffect(() => {
     if (!search.trim()) {
       setCards(wines);
@@ -71,7 +70,6 @@ const Home = () => {
     setCards(filtered);
   }, [search, wines]);
 
-  // Édition
   const handleEditWine = (wine) => {
     setEditingWine(wine);
     setShowForm(true);
@@ -90,7 +88,6 @@ const Home = () => {
     setTimeout(() => setHighlightId(null), 5000);
   };
 
-  // Suppression
   const handleDeleteBottle = async (id) => {
     if (!window.confirm(t("home.deleteConfirm"))) return;
 
@@ -110,7 +107,6 @@ const Home = () => {
       <section className="px-4 py-6 space-y-4">
         <SearchForm setSearch={setSearch} />
 
-        {/* Bouton Ajouter visible seulement si connecté */}
         {user && !showForm && (
           <button
             onClick={() => {
@@ -124,7 +120,6 @@ const Home = () => {
           </button>
         )}
 
-        {/* Formulaire Add/Edit */}
         {showForm && (
           <AddForm
             fetchAllWines={fetchAllWines}
@@ -140,6 +135,20 @@ const Home = () => {
         )}
       </section>
 
+      {/* Vidéo visible uniquement si l'utilisateur n'est PAS connecté */}
+      {!user && (
+        <div className="w-full flex justify-center items-center py-8">
+          <video
+            src={introVideo}
+            autoPlay
+            muted
+            playsInline
+            controls
+            className="w-full max-w-3xl rounded-lg shadow-lg"
+          />
+        </div>
+      )}
+
       <Cards
         key={mountKey}
         cards={cards}
@@ -154,6 +163,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 
