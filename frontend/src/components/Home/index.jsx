@@ -137,15 +137,24 @@ const Home = () => {
 
       {/* Vidéo visible uniquement si l'utilisateur n'est PAS connecté */}
       {!user && (
-        <div className="w-full flex justify-center items-center py-8">
+        <div className="relative w-full max-w-5xl mx-auto">
+          <span className="absolute top-3 left-3 bg-black/60 text-white text-sm px-3 py-1 rounded-md backdrop-blur">
+            {t("demoVideo.badge")}
+          </span>
+
           <video
             src={introVideo}
             autoPlay
             muted
+            loop
             playsInline
             controls
-            className="w-full max-w-3xl rounded-lg shadow-lg"
+            className="w-full rounded-lg shadow-xl"
           />
+
+          <p className="text-center text-sm text-gray-500 mt-2">
+            {t("demoVideo.caption")}
+          </p>
         </div>
       )}
 

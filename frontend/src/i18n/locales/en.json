@@ -113,6 +113,9 @@
     "account": "My account",
     "tagline": "Find every wine that has made an impression on you, in an instant."
   },
+  "footer": {
+    "rights": "© {{year}} Elixir - All rights reserved"
+  },
   "home": {
     "loadError": "Cylinder loading error",
     "deleteConfirm": "Delete that bottle?",
@@ -131,7 +134,9 @@
     "Pétillant": "Sparkling",
     "Autre": "Other"
   },
-  "footer": {
-    "rights": "© {{year}} Elixir - All rights reserved"
+  "demoVideo": {
+    "badge": "Example video — Demo account",
+    "caption": "This is a demonstration from an existing demo account.",
+    "alt": "Demo video of the application"
   }
 }

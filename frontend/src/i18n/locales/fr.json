@@ -133,5 +133,10 @@
   "Rosé": "Rosé",
   "Pétillant": "Pétillant",
   "Autre": "Autre"
+  },
+    "demoVideo": {
+    "badge": "Vidéo d’exemple — Compte démo",
+    "caption": "Ceci est une démonstration d’un compte existant.",
+    "alt": "Vidéo de démonstration de l'application"
   }
 }
