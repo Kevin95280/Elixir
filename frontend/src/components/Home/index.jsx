@@ -137,7 +137,7 @@ const Home = () => {
 
       {/* Vidéo visible uniquement si l'utilisateur n'est PAS connecté */}
       {!user && (
-        <div className="w-full max-w-5xl mx-auto px-4">
+        <div className="w-full max-w-5xl mx-auto px-4 mt-24">
           <video
             src={introVideo}
             autoPlay
