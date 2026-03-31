@@ -10,9 +10,6 @@
     "translate": "node src/i18n/translate.js",
     "i18n:extract": "i18next src/**/*.{js,jsx}"
   },
-  "staticFiles": {
-    "staticPath": "public"
-  },
   "dependencies": {
     "boring-avatars": "^2.0.4",
     "deepl-node": "^1.24.0",
