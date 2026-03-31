@@ -8,8 +8,6 @@ import AddForm from "../AddForm";
 import Cards from "../Cards";
 import Footer from "../Footer";
 
-import introVideo from "../../assets/videos/Video Presentation Elixir.mp4";
-
 import { getBottles, deleteBottle } from "../../../../backend/src/app/services/bottleService";
 
 const Home = () => {
@@ -139,7 +137,7 @@ const Home = () => {
       {!user && (
         <div className="w-full flex justify-center items-center py-8">
           <video
-            src={introVideo}
+            src="/videos/presentation.mp4"
             autoPlay
             muted
             playsInline
