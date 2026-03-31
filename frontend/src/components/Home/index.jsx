@@ -10,6 +10,8 @@ import Footer from "../Footer";
 
 import { getBottles, deleteBottle } from "../../../../backend/src/app/services/bottleService";
 
+import introVideo from "../../assets/videos/presentation.mp4";
+
 const Home = () => {
   const { user, token } = useAuth();
   const { t } = useTranslation();
@@ -137,7 +139,7 @@ const Home = () => {
       {!user && (
         <div className="w-full flex justify-center items-center py-8">
           <video
-            src="/videos/presentation.mp4"
+            src={introVideo}
             autoPlay
             muted
             playsInline

@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import App from "./components/App/index.jsx";
 import "./assets/css/styleV2.css";
+import "./assets/videos/presentation.mp4";
 import "./i18n";
 
 import { BrowserRouter } from "react-router-dom";
