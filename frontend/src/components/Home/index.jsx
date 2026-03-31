@@ -138,16 +138,18 @@ const Home = () => {
       {/* Vidéo visible uniquement si l'utilisateur n'est PAS connecté */}
       {!user && (
         <div className="w-full max-w-5xl mx-auto px-4 mt-24">
-          <video
-            src={introVideo}
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls
-            className="w-full rounded-lg shadow-xl"
-            aria-label={t("demoVideo.alt")}
-          />
+          <div className="border border-white/20 bg-black/20 backdrop-blur-sm rounded-xl p-4 shadow-2xl">
+            <video
+              src={introVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              className="w-full rounded-lg shadow-xl"
+              aria-label={t("demoVideo.alt")}
+            />
+          </div>
 
           <p className="text-center text-sm text-gray-500 mt-2">
             {t("demoVideo.caption")}
